@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Organic Farming | Go Green</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary-green: #2e8b57;
+      --light-green: #e6f4ea;
+      --medium-green: #a0f894;
+      --dark-green: #256029;
+      --white: #ffffff;
+      --black: #333333;
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: var(--light-green);
+      color: var(--black);
+      line-height: 1.6;
+    }
+* {
+  box-sizing: border-box;
+}
+    /* Navigation + Banner */
+    .banner {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+  
+
+    .banner,.banner1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+
+.banner img {
+    width: 100%;
+    height: 2rem;
+    display: block;
+ 
+    object-fit: cover;
+}
+.banner1 img {
+    width: 100%;
+    height: 35rem;
+    display: block;
+    animation: zoomMove 8s ease-in-out infinite alternate;
+    object-fit: cover;
+  
+}
+
+@keyframes zoomMove {
+    0% {
+        transform: scale(1) translateX(0);
+    }
+    100% {
+        transform: scale(1.1) translateX(-10px);
+    }
+}
+
+.nav {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background-color: #a0f894; 
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 999;
+}
+
+.nav img {
+  width: 100px; 
+  height: auto;
+}
+
+.nav ul {
+  list-style: none; 
+  display: flex;
+  gap: 30px;
+  margin: 0;
+}
+
+.nav ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+  padding: 8px 12px;
+}
+
+.nav ul li a:hover {
+  color: #ffd700;
+}
+
+
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+  .nav ul.show {
+    display: flex;
+  }
+.nav ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+}
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+      z-index: 1;
+    }
+
+    .hero img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      animation: fadeInDown 1s ease;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+      animation: fadeInUp 1s ease;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: var(--primary-green);
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: 2px solid var(--primary-green);
+      animation: fadeIn 1.5s ease;
+    }
+
+    .btn:hover {
+      background-color: transparent;
+      color: white;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      color: white;
+      margin-left: 15px;
+    }
+
+    .btn-outline:hover {
+      background-color: var(--primary-green);
+    }
+
+    /* Organic Banner */
+    .organic-banner {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .organic-banner::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://images.unsplash.com/photo-1534710961216-75c88202f43d?q=80&w=1000') center/cover;
+      opacity: 0.05;
+      z-index: 0;
+    }
+
+    .organic-banner .container {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .organic-banner h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      color: var(--dark-green);
+      position: relative;
+      display: inline-block;
+    }
+
+    .organic-banner h1::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background-color: var(--primary-green);
+    }
+
+    .organic-banner p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 30px;
+      color: #555;
+    }
+
+    /* Card Section */
+    .sections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 80px 20px;
+      background-color: var(--light-green);
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 15px;
+      padding: 40px 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      max-width: 400px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(90deg, var(--primary-green), var(--medium-green));
+      z-index: 2;
+    }
+
+    .card h2 {
+      color: var(--dark-green);
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .card h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 2px;
+      background-color: var(--primary-green);
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .card ul li {
+      margin-bottom: 15px;
+      padding-left: 30px;
+      position: relative;
+    }
+
+    .card ul li::before {
+      content: "🌱";
+      position: absolute;
+      left: 0;
+      font-size: 1.2rem;
+    }
+
+    /* Plain Section */
+    .plain-section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 80px 20px;
+      background-color: var(--white);
+      align-items: center;
+    }
+
+    .plain-section .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .plain-section .text {
+      flex: 1;
+      padding: 30px;
+      min-width: 300px;
+    }
+
+    .plain-section .text h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: var(--dark-green);
+      position: relative;
+      display: inline-block;
+    }
+
+    .plain-section .text h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background-color: var(--primary-green);
+    }
+
+    .plain-section .text ul {
+      margin-left: 20px;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .plain-section .text ul li {
+      margin-bottom: 15px;
+      padding-left: 30px;
+      position: relative;
+      font-size: 1.1rem;
+    }
+
+    .plain-section .text ul li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--primary-green);
+      font-weight: bold;
+    }
+
+    .plain-section .image {
+      flex: 1;
+      padding: 30px;
+      min-width: 300px;
+      position: relative;
+    }
+
+    .plain-section .image img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .plain-section .image:hover img {
+      transform: scale(1.02);
+    }
+
+    /* Farming Types Section */
+    .farming-types {
+      background-color: #dff7d6;
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .farming-types::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://images.unsplash.com/photo-1586771107445-d3ca888129ce?q=80&w=1000') center/cover;
+      opacity: 0.05;
+      z-index: 0;
+    }
+
+    .farming-types .container {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .farming-types h2 {
+      color: var(--dark-green);
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .farming-types h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background-color: var(--primary-green);
+    }
+
+    .farming-types ul {
+      list-style: none;
+      padding: 0;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .farming-types ul li {
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: rgba(255,255,255,0.8);
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      position: relative;
+      padding-left: 60px;
+    }
+
+    .farming-types ul li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .farming-types ul li::before {
+      content: "✅";
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      font-size: 1.5rem;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      padding: 80px 20px;
+      background-color: var(--white);
+      text-align: center;
+    }
+.testimonial-author {
+  display: flex;
+  align-items: center;
+ 
+}
+
+.testimonial-author img {
+  width: 150px;
+  height:150px;
+  border-radius: 50%; 
+  object-fit: cover;
+  margin-right: 15px;
+  border: 3px solid var(--primary-green);
+  flex-shrink: 0; 
+}
+
+
+    .testimonials h2 {
+      color: var(--dark-green);
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .testimonials h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background-color: var(--primary-green);
+    }
+
+    .testimonial-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .testimonial {
+      background-color: var(--light-green);
+      padding: 30px;
+      border-radius: 50px;
+      max-width: 350px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .testimonial:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+
+    .testimonial::before {
+      content: '"';
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 4rem;
+      color: rgba(46, 139, 87, 0.1);
+      font-family: serif;
+      line-height: 1;
+    }
+  .testimonial p {
+      font-style: italic;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+    .author-info h4 {
+      margin: 0;
+      color: var(--dark-green);
+    }
+
+    .author-info p {
+      margin: 5px 0 0;
+      font-style: normal;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    /* Newsletter */
+    .newsletter {
+      padding: 80px 20px;
+      background-color: var(--primary-green);
+      color: white;
+      text-align: center;
+    }
+
+    .newsletter .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .newsletter h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    .newsletter p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      opacity: 0.9;
+    }
+
+    .newsletter-form {
+      display: flex;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      padding: 15px;
+      border: none;
+      border-radius: 50px 0 0 50px;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    .newsletter-form button {
+      padding: 15px 30px;
+      background-color: var(--dark-green);
+      color: white;
+      border: none;
+      border-radius: 0 50px 50px 0;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .newsletter-form button:hover {
+      background-color: #1e4e22;
+    }
+
+/* Footer */
+.footer {
+  background-color: #063a1e;
+  color: white;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 0.5rem;
+}
+
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons i {
+  font-size: 1.2rem;
+  background-color: #fff;
+  color: #063a1e;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.links h3,
+.contact h3 {
+  margin-bottom: 1rem;
+  color: #00cc66;
+}
+
+.link-columns {
+  display: flex;
+  gap: 2rem;
+}
+
+.link-columns ul {
+  list-style: none;
+  padding: 0;
+}
+
+.link-columns li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.contact p {
+  margin-bottom: 0.6rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ffffff44;
+  margin: 2rem 0 1rem 0;
+}
+
+.footer .copyright {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+.footer {
+  position: relative;
+
+   background-image: url("https://th.bing.com/th/id/OIP.1i4erZ_17vSafdIDDvDxQAHaE9?cb=iwc2&rs=1&pid=ImgDetMain"); 
+  height: 30rem;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 2rem;
+  gap: 2rem;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+.footer li a{
+  text-decoration: none;
+  color: #f8f5f5;
+}
+.footer-container li:hover {
+  background-color: #77b66f;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 992px) {
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+      
+      .hero p {
+        font-size: 1.1rem;
+      }
+      
+      .nav ul {
+        gap: 15px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav {
+        padding: 0 20px;
+      }
+      
+      .nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--medium-green);
+        flex-direction: column;
+        gap: 0;
+        padding: 20px 0;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+      }
+      
+      .nav ul.show {
+        display: flex;
+      }
+      
+      .nav ul li {
+        width: 100%;
+        text-align: center;
+      }
+      
+      .nav ul li a {
+        display: block;
+        padding: 15px;
+      }
+      
+    
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      
+      .btn {
+        padding: 10px 20px;
+      }
+      
+      .plain-section .text, 
+      .plain-section .image {
+        flex: 100%;
+      }
+      
+      .newsletter-form {
+        flex-direction: column;
+      }
+      
+      .newsletter-form input {
+        border-radius: 50px;
+        margin-bottom: 10px;
+      }
+      
+      .newsletter-form button {
+        border-radius: 50px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      
+      .organic-banner h1,
+      .farming-types h2,
+      .testimonials h2 {
+        font-size: 2rem;
+      }
+      
+      .card {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="banner">
+    <div class="hero">
+      <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Organic Farm">
+      <div class="hero-content">
+        <h1>Go Green With Organic Farming</h1>
+        <p>Join our movement towards sustainable agriculture and healthier living</p>
+        <div>
+          <a href="signup.html" class="btn">Join Now</a>
+          <a href="about1.html" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+    </div>
+   
+     
+<div class="nav" id="navbar">
+  <img src="images1/logo.png" alt="logo" height="20px">
+
+  <ul id="navMenu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about1.html">About</a></li>
+    <li><a href="organic.html">Organic Farming</a></li>
+    <li><a href="service.html">Services & Product</a></li>
+    <li><a href="signup.html">Sign Up</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+</div>
+
+
+  <!-- What is Organic Farming -->
+  <section class="organic-banner">
+    <div class="container">
+      <h1>🌿 What is Organic Farming?</h1>
+      <p>Organic farming is an eco-friendly approach to agriculture that avoids synthetic chemicals and promotes biodiversity, sustainability, and soil health using natural processes. It works in harmony with nature rather than against it.</p>
+     
+    </div>
+  </section>
+
+  <!-- Key Principles and Benefits -->
+  <section class="sections">
+    <div class="card">
+      <h2>🌾 Key Principles</h2>
+      <ul>
+        <li>Maintain soil health using compost and crop rotation</li>
+        <li>Encourage biodiversity and eco-balance</li>
+        <li>Natural pest control with bio-solutions</li>
+        <li>Ensure animal welfare and organic feed</li>
+        <li>Focus on long-term sustainability</li>
+        <li>Preserve natural resources and ecosystems</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>✅ Benefits</h2>
+      <ul>
+        <li>Healthier, chemical-free food</li>
+        <li>Protects environment and biodiversity</li>
+        <li>Reduces pollution and emissions</li>
+        <li>Boosts rural employment</li>
+        <li>High market demand and value</li>
+        <li>Improves soil fertility long-term</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- Plain Environmental Section -->
+  <div class="plain-section">
+    <div class="container">
+      <div class="image">
+        <img src="https://img.freepik.com/free-vector/eco-concept-illustration_114360-6345.jpg" alt="eco">
+      </div>
+      <div class="text">
+        <h2>Environmental and Ecological Protection</h2>
+        <ul>
+          <li><strong>Waste Reduction:</strong> Organic farming minimizes waste through composting and recycling</li>
+          <li><strong>Soil Health Improvement:</strong> Increases organic matter and microbial activity</li>
+          <li><strong>Reduction of Chemical Use:</strong> Eliminates synthetic pesticides and fertilizers</li>
+          <li><strong>Biodiversity Promotion:</strong> Supports diverse plant and animal life</li>
+          <li><strong>Carbon Sequestration:</strong> Organic soils capture and store more carbon</li>
+          <li><strong>Water Conservation:</strong> Reduces water pollution and improves retention</li>
+        </ul>
+        <a href="#" class="btn" style="margin-top: 20px; background-color: var(--dark-green);">Learn About Our Initiatives</a>
+      </div>
+    </div>
+  </div>
+
+  <!--  Types of Organic Farming -->
+  <section class="farming-types">
+    <div class="container">
+      <h2>Types of Organic Farming</h2>
+      <ul>
+        <li><strong>Pure Organic Farming</strong> Avoids all synthetic chemicals, using only natural inputs</li>
+        <li><strong>Integrated Organic Farming</strong>  Combines organic with modern sustainable techniques</li>
+        <li><strong>Permaculture</strong>  Mimics natural ecosystems for self-sustaining design</li>
+        <li><strong>Biodynamic Farming</strong>  Uses astrological and holistic practices with organic methods</li>
+        <li><strong>Urban Organic Farming</strong>  Organic farming in cities (rooftops, balconies, community gardens)</li>
+        <li><strong>Aquaponics/Hydroponics</strong> Soil-less organic cultivation with water efficiency</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>What Farmers Say</h2>
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <p>"Switching to organic farming was the best decision I ever made. My soil health has improved dramatically, and I get premium prices for my crops."</p>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rajesh Kumar">
+          <div class="author-info">
+            <h4>Rajesh Kumar</h4>
+            <p>Organic Farmer, Punjab</p>
+          </div>
+        </div>
+      </div>    
+      <div class="testimonial">
+        <p>"After 20 years of conventional farming, going organic brought new life to my land. The biodiversity on my farm now is incredible."</p>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Anand Patel">
+          <div class="author-info">
+            <h4>Anand Patel</h4>
+            <p>Farm Owner, Gujarat</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Left: Logo and Social Icons -->
+    <div class="footer-section logo-social">
+    
+      <h2>GO GREEN</h2>
+      <p>SAVE EARTH MISSION</p>
+      <div class="social-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-google-plus-g"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+
+    <!-- Middle: Quick Links -->
+    <div class="footer-section links">
+      <h3>QUICK LINK</h3>
+      <div class="link-columns">
+        <ul>
+          <li>Home</li>
+          <li>Aims Of Community</li>
+          <li>Why Vermicompost</li>
+          <li>What Do We Do</li>
+          <li>Sign Up</li>
+        </ul>
+        <ul>
+          <li>About Us</li>
+          <li>Join Community</li>
+          <li>Organic Farming</li>
+          <li>What We Offer</li>
+          <li>Login</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right: Contact Info -->
+    <div class="footer-section contact">
+      <h3>CONTACT</h3>
+      <p><strong>Address:</strong> Hyderbad</p>
+      <p><strong>Phone:</strong> +91 123456789</p>
+      <p><strong>Email:</strong> gogreen@gmail.com</p>
+      <p><strong>Open hours:</strong> Mon - Sun: <b>8 AM to 9 PM</b></p>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <hr>
+    <p class="copyright">© 2025 All rights reserved | Go Green Community</p>
+  </div>
+</footer>
+</div>
+      
+    
+      
+     
+
+</body>
+</html>
+    
+  
+    

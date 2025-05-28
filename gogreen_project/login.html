@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0fff0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login {
+      background-color: #ffffff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 128, 0, 0.1);
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      align-items: stretch;
+    }
+
+    .login h1 {
+      font-size: 24px;
+      text-align: center;
+      color: #228B22;
+    }
+
+    .login input[type="text"],
+    .login input[type="password"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .remember {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      gap: 8px;
+    }
+
+    .login button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .login button:hover {
+      background-color: #218838;
+    }
+
+    .login h4 {
+      text-align: center;
+      color: #555;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+   
+    .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: -10px;
+}
+
+.social-icons a img {
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.1);
+}
+
+    </style>
+</head>
+<body>
+    <div>
+    <div class="login">
+    <h1>Sign In to Go Green</h1>
+    <input type="text" placeholder="User ID">
+    <input type="text" placeholder="Password">
+    <div class="remember">
+      <input type="checkbox" id="remember">
+      <label for="remember">Remember me</label>
+    </div>
+    <button type="submit" >login</button>
+    <h4>or sign in with</h4>
+  
+    <div class="social-icons">
+    <a href="#"><img src="images1/facebook.png" alt="Facebook" height="40px"></a>
+    <a href="#"><img src="images1/google.png" alt="Google" height="40px"></a>
+    <a href="#"><img src="images1/twitter.png" alt="Twitter" height="40px"></a>
+   </div>
+    </div>
+</div>
+
+</body>
+</html>
